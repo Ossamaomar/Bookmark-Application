@@ -1,0 +1,207 @@
+body
+{
+    background-color: #f7ecde;
+}
+
+::selection
+{
+    background-color: #fec260;
+    color: #352e28;
+}
+
+h1,h2,h3,h4,h5,p
+{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.header-section h1
+{
+    font-family: "Pacifico";
+    font-weight: 500;
+    font-size: 50px;
+    position: relative;
+    z-index: 3;
+}
+
+.container
+{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.header-section h1::after
+{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 35%;
+    background-color: #fec260;
+    z-index: -1;
+    transition: all 0.4s;
+}
+
+.header-section h1:hover::after
+{
+    height: 70%;
+}
+
+.dotted-line
+{   
+    width: 100%;
+    border: 2px #000 dotted;
+    border-top: 0;
+    
+}
+
+.user-interaction-section h2
+{
+    font-family: "Righteous", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    background: linear-gradient(to right, #22763b, #ede053);
+    -webkit-background-clip: text; /* Clip the background to the text */
+    -webkit-text-fill-color: transparent; /* Make the text fill transparent */
+}
+
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #d99c39;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #fec26055;
+}
+
+.user-interaction-section button
+{
+    color: white;
+    background-color: #d1512d;
+    border-color: #d1512d;
+    transition: all 0.4s;
+    
+}
+
+.user-interaction-section button:hover
+{
+    color: white;
+    background-color: #bb4120;
+    border-color: #a03315;
+}
+
+
+#subBtn
+{
+    width: fit-content;
+}
+
+.bookmarks-section h5
+{
+    font-family: "PT Sans Caption", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.bookmarks-section .straight-line
+{
+    width: 100%;
+    height: 1px;
+    background-color: #0000002a;
+}
+
+.bookmarks-section .visit-btn
+{
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #9eb23b;
+    --bs-btn-border-color: #9eb23b;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #8a9e23;
+    --bs-btn-hover-border-color: #6e8018;
+}
+
+.bookmarks-section .delete-btn
+{
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #eb1d36;
+    --bs-btn-border-color: #eb1d36;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #d30820;
+    --bs-btn-hover-border-color: #ba081d;
+}
+
+.bookmarks-section .bookmark-row
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: "PT Sans Caption", sans-serif;
+}
+
+.validation-error-screen
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #0000007e;
+    height: 100%;
+    z-index: 10;
+}
+
+.validation-error-screen .error-container
+{
+    width: 500px;
+    /* height: 300px; */
+    background: #fff;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.validation-error-screen .screen-header .three-circles
+{
+    width: 80px;
+}
+
+.validation-error-screen .screen-header .circle
+{
+    width: 20px;
+    height: 20px;
+
+}
+
+.validation-error-screen .screen-header .red-circle
+{
+    background-color: #f15f5d;
+}
+
+.validation-error-screen .screen-header .yellow-circle
+{
+    background-color: #febe2e;
+}
+
+.validation-error-screen .screen-header .green-circle
+{
+    background-color: #4db748;
+}
+
+.validation-error-screen .error-info-para
+{
+    font-family: "Bree Serif", serif;
+    font-size: 21px;
+    line-height: 27.3px;
+}
+
+
+
+.validation-error-screen .fixing-list li
+{
+    font-family: "PT Sans Caption", sans-serif;
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+.validation-error-screen .fixing-list li i
+{
+    color: #bb4120;
+}
